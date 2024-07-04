@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Day</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            border-style: double;
+            padding: 10px;
+        }
+        .header {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
+        }
+        table {
+            width: 100%;
+            border-style:none;
+        }
+        td {
+            border-style: double;
+            padding: 20px;
+            
+        }
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .task-list {
+            list-style-type: none;
+            padding-left: 100px;
+        }
+        .task-list li {
+            margin: 15px 0;
+        }
+        .subtask {
+            margin-left: 20px;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .image-container img {
+            width: 45%;
+            margin: 5px 0;
+            border: 2px solid #000;
+        }
+        .things-to-watch-title {
+            border-style:double ;
+            background-color: yellow;
+            font-weight: bold;
+            text-align: center;
+            padding: 2px;
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">My Day</div>
+    <table>
+        <tr>
+            <td style="width: 50%;">
+                <div class="section-title">1. Wake up early</div>
+                <ul class="task-list">
+                    <li><b>5AM</b></li>
+                    <li class="subtask">walk</li>
+                    <li class="subtask">jog</li>
+                </ul>
+            </td>
+            <td rowspan="3" style="width: 50%;">
+                <div class="things-to-watch-title">Things to watch</div>
+                <div class="image-container">
+                    <img src="im1.jpg" alt="jogging">
+                    <img src="im2.jpeg" alt="Breakfast">
+                    <img src="im3.jpg" alt="Coffee">
+                    <img src="im4.jpg" alt="Meeting">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="section-title">2. Breakfast</div>
+                <ul class="task-list">
+                    <li><b>8AM</b></li>
+                    <li class="subtask">eggs</li>
+                    <li class="subtask">coffee</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="section-title">3. Go to Saveetha</div>
+                <ul class="task-list">
+                    <li><b>8AM</b></li>
+                    <li class="subtask">attend classes</li>
+                    <li class="subtask">to be continued</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
